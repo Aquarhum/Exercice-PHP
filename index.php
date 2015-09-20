@@ -3,10 +3,11 @@
 	<head>
 		<title> Papa ? | Exercice Php </title>
 		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<style>
 			body{
 				background:#eeeeee;
-				font-family: sans-serif;
+				font-family: 'Lato', sans-serif;
 				position:relative;
 			}
 
@@ -45,7 +46,8 @@
 			.reponse{
 				padding: 30px 0;
 				width:90%;
-				line-height: 20px
+				line-height: 20px;
+				text-align: center;
 			}
 
 			.non{
@@ -92,7 +94,7 @@
 
 	<body>
 		<div class="container">
-			<a href="#">Accéder au code</a>
+			<a href="https://github.com/Aquarhum/Exercice-PHP/blob/master/index.php">Accéder au code</a>
 			<h1> Papa ? </h1>
 			<h2> Je peux t'emprunter ta caisse ?</h2>
 
@@ -124,11 +126,10 @@
 			  		 <input id ="option-six" type="checkbox" name="raison6" value="Car" <?php if(isset($_GET['raison6'])){ echo 'checked="checked"';} ?>> Maman est au courant pour la voisine ?
 	    		</label>
 
-	    		<input type="hidden" name="test">
 
 
 			
-			  <input name="submitbutton" type="submit" class="pure-button" value="Button" />
+			  <input name="submitbutton" type="submit" class="pure-button" value="Demander !" />
 
 			</form>
 
@@ -241,7 +242,7 @@
 					echo "<div class='containerp non'><p class='reponse'>Tu peux rêver" . ",  " . $autreargument . " ! </p></div>";
 				}
 				if($accordpapa == 2){
-					echo "<div class='containerp ok';><p class='reponse'>Bon ok" . " mais " . $autreargument . "! Elle est belle non ?</p></div>";
+					echo "<div class='containerp ok';><p class='reponse'>Bon ok" . " mais " . $autreargument . "! Roulez jeunesse !</p></div>";
 					echo "<img src='http://www.wired.com/wp-content/uploads/2014/05/088_BMW_i8-new.jpg' alt='BMW de papa'>";
 				}
 				if($accordpapa == 3){
